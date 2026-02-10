@@ -79,3 +79,14 @@ The assistant retrieves relevant sections and answers with sources.
 * Resume screening
 * Legal document analysis
 * Knowledge base assistants
+## Demo
+
+### Upload
+![Upload](screenshots/upload.png)
+
+### Question
+![Question](screenshots/question.png)
+
+### Answer
+![Answer](screenshots/answer.png)
+
