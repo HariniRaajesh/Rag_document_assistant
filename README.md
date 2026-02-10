@@ -82,11 +82,12 @@ The assistant retrieves relevant sections and answers with sources.
 ## Demo
 
 ### Upload
-![Upload](screenshots/upload.png)
+![Upload](screenshots/Upload.png)
 
 ### Question
-![Question](screenshots/question.png)
+![Question](screenshots/Question.png)
 
 ### Answer
-![Answer](screenshots/answer.png)
+![Answer](screenshots/Answer.png)
+
 
