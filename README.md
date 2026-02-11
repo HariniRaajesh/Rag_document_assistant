@@ -1,84 +1,48 @@
-# 📄 Document Chat Assistant (RAG)
+🧠 Document Chat Assistant (RAG)
+  Ask questions from any PDF — get accurate answers from the document itself.
+🔗 Live App: http://16.170.158.230
+📑 API Docs: http://16.170.158.230/docs
 
-An end-to-end Retrieval Augmented Generation (RAG) system that allows users to upload PDF documents and ask natural language questions about them.
+✨ What this project does
+Upload a PDF → Ask a question → System finds the most relevant parts → Returns a grounded answer.
+No hallucinations. Only document-based responses.
+⚙️ How it works
+PDF → Text → Chunks → Embeddings → FAISS Index
+                                   ↑Question → Embedding → Similarity Search → Context → Answer
+🏗️ Tech Stack
+ Backend
+  * FastAPI
+  * LangChain
+  * Sentence-Transformers (MiniLM)
+  * FAISS Vector Store
+Frontend
+  * Streamlit
+Deployment
+  * AWS EC2 (Ubuntu)
+  * Nginx reverse proxy
+  * Background services (tmux)
 
-The system retrieves relevant document chunks using vector similarity search and returns grounded answers with sources.
-
----
-
-## 🚀 Features
-
-* Upload PDF documents
-* Semantic search using embeddings
-* Context-aware question answering
-* Source page citation
-* Interactive chat UI
-
----
-
-## 🧠 Tech Stack
-
-* Python
-* FastAPI
-* Streamlit
-* LangChain
-* HuggingFace Embeddings
-* FAISS Vector Database
-
----
-
-## 🏗️ Architecture
-
-User → Upload PDF → Chunking → Embeddings → FAISS
-User Question → Retriever → Context → Answer
-
----
-
-## ▶️ How to Run
-
-### 1. Clone repo
-
-```bash
-git clone https://github.com/yourusername/rag-document-assistant.git
-cd rag-document-assistant
-```
-
-### 2. Install dependencies
-
-```bash
+🚀 Features
+  * Upload any PDF
+  * Semantic document search
+  * Context-aware answers
+  * Interactive UI
+  * Live deployed API
+▶️ Run locally
+git clone https://github.com/HariniRaajesh/Rag_document_assistant.git
+cd Rag_document_assistant
 pip install -r requirements.txt
-```
-
-### 3. Run backend
-
-```bash
-python -m uvicorn backend.main:app --reload
-```
-
-### 4. Run frontend
-
-```bash
+uvicorn backend.main:app --reload
 streamlit run frontend/app.py
-```
 
----
+💡 Use cases
+  * Knowledge base assistants
+  * Research paper Q&A
+  * Legal document analysis
+  * Resume screening tools
 
-## 📷 Demo
-
-Upload a PDF and ask:
-
-> “What is the main topic of the document?”
-
-The assistant retrieves relevant sections and answers with sources.
-
----
-
-## 🎯 Use Cases
-
-* Enterprise document search
-* Resume screening
-* Legal document analysis
-* Knowledge base assistants
+👩‍💻 Author
+  Harini
 ## Demo
 
 ### Upload
@@ -89,5 +53,6 @@ The assistant retrieves relevant sections and answers with sources.
 
 ### Answer
 ![Answer](screenshots/Answer.png)
+
 
 
