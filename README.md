@@ -6,17 +6,21 @@
 ✨ What this project does
 Upload a PDF → Ask a question → System finds the most relevant parts → Returns a grounded answer.
 No hallucinations. Only document-based responses.
+
 ⚙️ How it works
 PDF → Text → Chunks → Embeddings → FAISS Index
                                    ↑Question → Embedding → Similarity Search → Context → Answer
+                                   
 🏗️ Tech Stack
  Backend
   * FastAPI
   * LangChain
   * Sentence-Transformers (MiniLM)
   * FAISS Vector Store
+    
 Frontend
   * Streamlit
+    
 Deployment
   * AWS EC2 (Ubuntu)
   * Nginx reverse proxy
@@ -28,6 +32,7 @@ Deployment
   * Context-aware answers
   * Interactive UI
   * Live deployed API
+    
 ▶️ Run locally
 git clone https://github.com/HariniRaajesh/Rag_document_assistant.git
 cd Rag_document_assistant
@@ -53,6 +58,7 @@ streamlit run frontend/app.py
 
 ### Answer
 ![Answer](screenshots/Answer.png)
+
 
 
 
