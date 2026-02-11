@@ -1,6 +1,18 @@
+## 🧩 Problem
+Large documents are hard to search manually. Traditional keyword search fails to understand meaning and context.
+
+## 💡 Solution
+Built a Retrieval Augmented Generation (RAG) system that understands user questions semantically and retrieves the most relevant sections from uploaded PDFs to generate grounded answers.
+
+## 🔍 What makes this different
+Unlike chatbots, this system does not generate random responses — every answer comes directly from the uploaded document using vector similarity search.
+
+
+
 🧠 Document Chat Assistant (RAG)
   Ask questions from any PDF — get accurate answers from the document itself.
 🔗 Live App: http://16.170.158.230
+
 📑 API Docs: http://16.170.158.230/docs
 
 ✨ What this project does
@@ -58,6 +70,7 @@ streamlit run frontend/app.py
 
 ### Answer
 ![Answer](screenshots/Answer.png)
+
 
 
 
