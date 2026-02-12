@@ -1,76 +1,90 @@
-## 🧩 Problem
-Large documents are hard to search manually. Traditional keyword search fails to understand meaning and context.
-
-## 💡 Solution
-Built a Retrieval Augmented Generation (RAG) system that understands user questions semantically and retrieves the most relevant sections from uploaded PDFs to generate grounded answers.
-
-## 🔍 What makes this different
-Unlike chatbots, this system does not generate random responses — every answer comes directly from the uploaded document using vector similarity search.
-
-
-
 🧠 Document Chat Assistant (RAG)
-  Ask questions from any PDF — get accurate answers from the document itself.
-  
-🔗 Live App: http://16.170.158.230
 
-📑 API Docs: http://16.170.158.230/docs
+Ask questions from any PDF — get accurate answers directly from the document.
 
-✨ What this project does
+🔗 Live App: http://13.49.14.78
 
-Upload a PDF → Ask a question → System finds the most relevant parts → Returns a grounded answer.
-No hallucinations. Only document-based responses.
+📑 API Docs: http://13.49.14.78/docs
 
-⚙️ How it works
+🧩 Problem
 
-PDF → Text → Chunks → Embeddings → FAISS Index
-                                   ↑Question → Embedding → Similarity Search → Context → Answer
-                                   
+Large documents are difficult to search manually.
+Traditional keyword search cannot understand context or meaning.
+
+💡 Solution
+
+Built a Retrieval Augmented Generation (RAG) system that understands user queries semantically and retrieves the most relevant sections from uploaded PDFs to generate grounded answers.
+
+🔍 What Makes This Different
+
+Unlike typical chatbots, this system does not hallucinate.
+Every answer comes directly from the document using vector similarity search.
+
+✨ What This Project Does
+
+Upload a PDF → Ask a question → Retrieve relevant sections → Return contextual answer
+
+⚙️ How It Works
+PDF → Text Extraction → Chunking → Embeddings → FAISS Index
+                                         ↑
+Question → Embedding → Similarity Search → Context → Answer
+
 🏗️ Tech Stack
+Backend
 
- Backend
- 
-  * FastAPI
-  * LangChain
-  * Sentence-Transformers (MiniLM)
-  * FAISS Vector Store
-    
+FastAPI
+
+LangChain
+
+Sentence-Transformers (MiniLM)
+
+FAISS Vector Store
+
 Frontend
 
-  * Streamlit
-    
+Streamlit
+
 Deployment
 
-  * AWS EC2 (Ubuntu)
-  * Nginx reverse proxy
-  * Background services (tmux)
+AWS EC2 (Ubuntu)
+
+Nginx Reverse Proxy
+
+Background services (tmux)
 
 🚀 Features
 
-  * Upload any PDF
-  * Semantic document search
-  * Context-aware answers
-  * Interactive UI
-  * Live deployed API
-    
-▶️ Run locally
+Upload any PDF
 
+Semantic document search
+
+Context-grounded answers
+
+Interactive UI
+
+Live deployed API
+
+▶️ Run Locally
 git clone https://github.com/HariniRaajesh/Rag_document_assistant.git
-
 cd Rag_document_assistant
 
 pip install -r requirements.txt
 
+# backend
 uvicorn backend.main:app --reload
 
+# frontend
 streamlit run frontend/app.py
 
-💡 Use cases
+💡 Use Cases
 
-  * Knowledge base assistants
-  * Research paper Q&A
-  * Legal document analysis
-  * Resume screening tools
+Knowledge base assistants
+
+Research paper Q&A
+
+Legal document analysis
+
+Resume screening tools
 
 👩‍💻 Author
 
