@@ -1,4 +1,4 @@
-🧠 Document Chat Assistant (RAG)
+ Document Chat Assistant (RAG)
 
 Ask questions from any PDF — get accurate answers directly from the document.
 
@@ -8,61 +8,61 @@ Ask questions from any PDF — get accurate answers directly from the document.
 
 🧩 Problem
 
-Large documents are difficult to search manually.
-Traditional keyword search cannot understand context or meaning.
+  * Large documents are difficult to search manually.
+  * Traditional keyword search cannot understand context or meaning.
 
 💡 Solution
 
-Built a Retrieval Augmented Generation (RAG) system that understands user queries semantically and retrieves the most relevant sections from uploaded PDFs to generate grounded answers.
+    * Built a Retrieval Augmented Generation (RAG) system that understands user queries semantically and retrieves the most relevant sections from uploaded PDFs to generate grounded answers.
 
 🔍 What Makes This Different
 
-Unlike typical chatbots, this system does not hallucinate.
-Every answer comes directly from the document using vector similarity search.
+  * Unlike typical chatbots, this system does not hallucinate.
+  * Every answer comes directly from the document using vector similarity search.
 
 ✨ What This Project Does
 
 Upload a PDF → Ask a question → Retrieve relevant sections → Return contextual answer
 
 ⚙️ How It Works
-PDF → Text Extraction → Chunking → Embeddings → FAISS Index
+  PDF → Text Extraction → Chunking → Embeddings → FAISS Index
                                          ↑
-Question → Embedding → Similarity Search → Context → Answer
+  Question → Embedding → Similarity Search → Context → Answer
 
 🏗️ Tech Stack
-Backend
+  * Backend
 
-FastAPI
+  * FastAPI
 
-LangChain
+  * LangChain
 
-Sentence-Transformers (MiniLM)
+  * Sentence-Transformers (MiniLM)
 
-FAISS Vector Store
+  * FAISS Vector Store
 
-Frontend
+  * Frontend
 
-Streamlit
+  * Streamlit
 
 Deployment
 
-AWS EC2 (Ubuntu)
+  * AWS EC2 (Ubuntu)
 
-Nginx Reverse Proxy
+  * Nginx Reverse Proxy
 
-Background services (tmux)
+  * Background services (tmux)
 
 🚀 Features
 
-Upload any PDF
+  * Upload any PDF
 
-Semantic document search
+  * Semantic document search
 
-Context-grounded answers
+  * Context-grounded answers
 
-Interactive UI
+  * Interactive UI
 
-Live deployed API
+  * Live deployed API
 
 ▶️ Run Locally
 git clone https://github.com/HariniRaajesh/Rag_document_assistant.git
@@ -78,17 +78,14 @@ streamlit run frontend/app.py
 
 💡 Use Cases
 
-Knowledge base assistants
+  * Knowledge base assistants
 
-Research paper Q&A
+  * Research paper Q&A
 
-Legal document analysis
+  * Legal document analysis
 
-Resume screening tools
+  * Resume screening tools
 
-👩‍💻 Author
-
-  Harini
 ## Demo
 
 ### Upload
@@ -99,6 +96,10 @@ Resume screening tools
 
 ### Answer
 ![Answer](screenshots/Answer.png)
+
+👩‍💻 Author
+
+  Harini
 
 
 
