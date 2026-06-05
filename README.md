@@ -4,32 +4,32 @@ Ask questions from any PDF — get accurate answers directly from the document.
 
 🔗 Live App: http://13.49.14.78
 
-📑 API Docs: http://13.49.14.78/docs
+ API Docs: http://13.49.14.78/docs
 
-🧩 Problem
+ Problem
 
   * Large documents are difficult to search manually.
   * Traditional keyword search cannot understand context or meaning.
 
-💡 Solution
+Solution
 
     * Built a Retrieval Augmented Generation (RAG) system that understands user queries semantically and retrieves the most relevant sections from uploaded PDFs to generate grounded answers.
 
-🔍 What Makes This Different
+ What Makes This Different
 
   * Unlike typical chatbots, this system does not hallucinate.
   * Every answer comes directly from the document using vector similarity search.
 
-✨ What This Project Does
+What This Project Does
 
 Upload a PDF → Ask a question → Retrieve relevant sections → Return contextual answer
 
-⚙️ How It Works
+ How It Works
   PDF → Text Extraction → Chunking → Embeddings → FAISS Index
                                          ↑
   Question → Embedding → Similarity Search → Context → Answer
 
-🏗️ Tech Stack
+ Tech Stack
   * Backend
 
   * FastAPI
@@ -52,7 +52,7 @@ Deployment
 
   * Background services (tmux)
 
-🚀 Features
+ Features
 
   * Upload any PDF
 
@@ -76,7 +76,7 @@ uvicorn backend.main:app --reload
 # frontend
 streamlit run frontend/app.py
 
-💡 Use Cases
+ Use Cases
 
   * Knowledge base assistants
 
